@@ -70,7 +70,7 @@ data "archive_file" "zip_the_python_code" {
   output_path = "${path.module}/lambda/func.zip"
 }
 
-resource "aws_lambda_function_url" "url1" {
+resource "aws_lambda_function_url" "https://6owlajvp2xgsk6wsbxd3axx5v40sxynx.lambda-url.ap-southeast-1.on.aws" {
   function_name      = aws_lambda_function.myfunc.function_name
   authorization_type = "NONE"
 
